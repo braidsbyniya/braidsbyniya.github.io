@@ -2,458 +2,779 @@
 
 <html lang="en">
 
-<<!DOCTYPE html>
-
-<html lang="en">
-
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Braids by Niya | Book Now</title>
+<title>Braids by Niya | Book Now</title>
 
-  <style>
+<style>
 
-    body {
+* {
 
-      margin: 0;
+  box-sizing: border-box;
 
-      font-family: Arial, sans-serif;
+  margin: 0;
 
-      background: #fff;
+  padding: 0;
 
-      color: #222;
+}
 
-      text-align: center;
+body {
 
-    }
+  font-family: Arial, sans-serif;
 
-    header {
+  background: #050505;
 
-      padding: 35px 20px 20px;
+  color: white;
 
-      background: #f8f8f8;
+  line-height: 1.6;
 
-    }
+}
 
-    h1 {
+header {
 
-      font-size: 38px;
+  background: linear-gradient(135deg, #050505, #21000f, #050505);
 
-      margin: 10px 0;
+  text-align: center;
 
-    }
+  padding: 35px 20px;
 
-    .subtitle {
+  border-bottom: 2px solid #ff1493;
 
-      font-size: 18px;
+}
 
-      margin-bottom: 20px;
+.logo {
 
-    }
+  max-width: 330px;
 
-    .notice {
+  width: 90%;
 
-      margin: 20px auto;
+  border-radius: 15px;
 
-      padding: 18px;
+  margin-bottom: 15px;
 
-      max-width: 500px;
+}
 
-      background: #f1f1f1;
+h1 {
 
-      border-radius: 15px;
+  color: #ff1493;
 
-      font-weight: bold;
+  font-size: 42px;
 
-      font-size: 18px;
+  margin-bottom: 5px;
 
-    }
+}
 
-    .section {
+.tagline {
 
-      padding: 25px 20px;
+  color: #d4af37;
 
-      max-width: 600px;
+  font-size: 18px;
 
-      margin: auto;
+  letter-spacing: 3px;
 
-    }
+}
 
-    .style {
+nav {
 
-      padding: 15px;
+  background: #111;
 
-      margin: 10px 0;
+  padding: 15px;
 
-      border: 1px solid #ddd;
+  text-align: center;
 
-      border-radius: 12px;
+  position: sticky;
 
-      background: #fafafa;
+  top: 0;
 
-    }
+  z-index: 10;
 
-    .book {
+  border-bottom: 1px solid #ff1493;
 
-      display: inline-block;
+}
 
-      margin: 15px 5px;
+nav a {
 
-      padding: 16px 35px;
+  color: white;
 
-      border-radius: 30px;
+  text-decoration: none;
 
-      background: #58b957;
+  margin: 0 12px;
 
-      color: white;
+  font-weight: bold;
 
-      text-decoration: none;
+}
 
-      font-size: 20px;
+nav a:hover {
 
-      font-weight: bold;
+  color: #ff1493;
 
-    }
+}
 
-    .book:hover {
+.hero {
 
-      opacity: .85;
+  text-align: center;
 
-    }
+  padding: 55px 20px;
 
-    .contact {
+  background:
 
-      padding: 30px 20px;
+    radial-gradient(circle at center, #4b0025 0%, #10000a 45%, #050505 75%);
 
-      background: #f8f8f8;
+}
 
-    }
+.hero h2 {
 
-    footer {
+  font-size: 38px;
 
-      padding: 20px;
+  color: #fff;
 
-      font-size: 14px;
+  margin-bottom: 15px;
 
-    }
+}
 
-    a {
+.hero p {
 
-      color: inherit;
+  max-width: 650px;
 
-    }
+  margin: auto;
 
-  </style>
+  color: #ddd;
+
+  font-size: 18px;
+
+}
+
+.button {
+
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 15px 30px;
+
+  background: #ff1493;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  box-shadow: 0 0 20px rgba(255,20,147,.5);
+
+}
+
+.button:hover {
+
+  background: #d40072;
+
+}
+
+section {
+
+  padding: 55px 20px;
+
+  max-width: 1000px;
+
+  margin: auto;
+
+}
+
+.section-title {
+
+  text-align: center;
+
+  color: #ff1493;
+
+  font-size: 32px;
+
+  margin-bottom: 30px;
+
+}
+
+.price-image {
+
+  display: block;
+
+  width: 100%;
+
+  max-width: 650px;
+
+  margin: 0 auto 40px;
+
+  border-radius: 15px;
+
+  border: 2px solid #ff1493;
+
+  box-shadow: 0 0 25px rgba(255,20,147,.3);
+
+}
+
+.prices {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 20px;
+
+}
+
+.card {
+
+  background: #111;
+
+  border: 1px solid #ff1493;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  box-shadow: 0 0 15px rgba(255,20,147,.12);
+
+}
+
+.card h3 {
+
+  color: #ff1493;
+
+  font-size: 22px;
+
+  margin-bottom: 15px;
+
+}
+
+.price-row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #333;
+
+  padding: 9px 0;
+
+}
+
+.price {
+
+  color: #ff1493;
+
+  font-weight: bold;
+
+}
+
+.deposit {
+
+  text-align: center;
+
+  background: linear-gradient(135deg, #31001a, #12000a);
+
+  border: 2px solid #ff1493;
+
+  border-radius: 18px;
+
+  padding: 30px 20px;
+
+  margin-top: 35px;
+
+}
+
+.deposit h3 {
+
+  color: #ff1493;
+
+  font-size: 28px;
+
+}
+
+.deposit p {
+
+  color: #ddd;
+
+}
+
+.booking {
+
+  background: #0d0d0d;
+
+  border-top: 1px solid #222;
+
+  border-bottom: 1px solid #222;
+
+}
+
+form {
+
+  max-width: 600px;
+
+  margin: auto;
+
+}
+
+label {
+
+  display: block;
+
+  margin-top: 15px;
+
+  margin-bottom: 6px;
+
+  color: #ff1493;
+
+  font-weight: bold;
+
+}
+
+input, select, textarea {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  border: 1px solid #555;
+
+  background: #181818;
+
+  color: white;
+
+  font-size: 16px;
+
+}
+
+textarea {
+
+  min-height: 120px;
+
+  resize: vertical;
+
+}
+
+.submit {
+
+  width: 100%;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+}
+
+.contact {
+
+  text-align: center;
+
+}
+
+.contact p {
+
+  margin: 12px 0;
+
+  font-size: 18px;
+
+}
+
+.contact a {
+
+  color: #ff1493;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+footer {
+
+  text-align: center;
+
+  background: #000;
+
+  padding: 30px 15px;
+
+  border-top: 2px solid #ff1493;
+
+  color: #aaa;
+
+}
+
+.gold {
+
+  color: #d4af37;
+
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+
+    font-size: 34px;
+
+  }
+
+  .hero h2 {
+
+    font-size: 30px;
+
+  }
+
+  nav a {
+
+    margin: 0 6px;
+
+    font-size: 14px;
+
+  }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-  <header>
+<header>
 
-    <h1>Braids by Niya</h1>
+  <img src="IMG_0616.jpeg" alt="Braids by Niya Price List" class="logo">
 
-    <div class="subtitle">Beautiful Braids • Clean Parts • Quality Service</div>
+  <h1>Braids by Niya</h1>
 
-    <div class="notice">
+  <div class="tagline">BRAID STUDIO</div>
 
-      💵 $25 DEPOSIT REQUIRED TO BOOK<br>
+</header>
 
-      Please have your deposit ready before booking.
+<nav>
+
+  <a href="#prices">Prices</a>
+
+  <a href="#booking">Book</a>
+
+  <a href="#contact">Contact</a>
+
+</nav>
+
+<div class="hero">
+
+  <h2>Beautiful Braids. Beautiful You. 💗</h2>
+
+  <p>
+
+    Welcome to Braids by Niya! Book your next braid appointment
+
+    and leave feeling confident, beautiful, and brand new.
+
+  </p>
+
+  <a href="#booking" class="button">BOOK YOUR APPOINTMENT</a>
+
+</div>
+
+<section id="prices">
+
+  <h2 class="section-title">💗 Price List 💗</h2>
+
+  <img src="IMG_0616.jpeg"
+
+       alt="Braids by Niya Price List"
+
+       class="price-image">
+
+  <div class="prices">
+
+    <div class="card">
+
+      <h3>Knotless Braids</h3>
+
+      <div class="price-row">
+
+        <span>Small</span>
+
+        <span class="price">$80</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>Medium</span>
+
+        <span class="price">$90</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>Large</span>
+
+        <span class="price">$70</span>
+
+      </div>
 
     </div>
 
-    <a class="book" href="sms:2165696837?&body=Hi%20Niya%2C%20I%20would%20like%20to%20book%20an%20appointment.%20My%20name%20is%3A%20%5BNAME%5D.%20The%20style%20I%20want%20is%3A%20%5BSTYLE%5D.%20My%20preferred%20date%20is%3A%20%5BDATE%5D.%20Preferred%20time%3A%20%5BTIME%5D.">
+    <div class="card">
 
-      BOOK NOW
+      <h3>Feed In Braids</h3>
 
-    </a>
+      <div class="price-row">
 
-  </header>
+        <span>8 Braids</span>
 
-  <section class="section">
+        <span class="price">$50</span>
 
-    <h2>Booking Information</h2>
+      </div>
 
-    <div class="style">
+      <div class="price-row">
 
-      <strong>$25 deposit required</strong><br>
+        <span>6 Braids</span>
 
-      Deposit is required to secure your appointment.
+        <span class="price">$40</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>4 Braids</span>
+
+        <span class="price">$30</span>
+
+      </div>
 
     </div>
 
-    <div class="style">
+    <div class="card">
 
-      Please include your name, desired hairstyle,
+      <h3>Tribal Braids</h3>
 
-      preferred date and preferred time when booking.
+      <div class="price-row">
+
+        <span>Boho Tribal</span>
+
+        <span class="price">$90</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>Tribal w/ Quick Weave</span>
+
+        <span class="price">$80</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>Tribal No Curls</span>
+
+        <span class="price">$60</span>
+
+      </div>
 
     </div>
 
-    <a class="book" href="sms:2165696837?&body=Hi%20Niya%2C%20I%27m%20ready%20to%20book.%20My%20name%20is%3A%20">
+    <div class="card">
 
-      TEXT TO BOOK
+      <h3>Add Ons</h3>
 
-    </a>
+      <div class="price-row">
 
-  </section>
+        <span>Butterfly Locs</span>
 
-  <section class="contact">
+        <span class="price">$25</span>
 
-    <h2>Contact</h2>
+      </div>
 
-    <p>📱 <a href="tel:2165696837">216-569-6837</a></p>
+      <div class="price-row">
 
-    <p>
+        <span>Bob Length</span>
 
-      Instagram:
+        <span class="price">$20</span>
 
-      <a href="https://instagram.com/braids_by__niya">
+      </div>
 
-        @braids_by__niya
+      <div class="price-row">
+
+        <span>Butt Length</span>
+
+        <span class="price">$30</span>
+
+      </div>
+
+      <div class="price-row">
+
+        <span>Curly Ends</span>
+
+        <span class="price">$15</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="deposit">
+
+    <h3>$25 DEPOSIT REQUIRED</h3>
+
+    <p>TO SECURE YOUR APPOINTMENT</p>
+
+    <p class="gold">Deposits are non-refundable.</p>
+
+  </div>
+
+</section>
+
+<section id="booking" class="booking">
+
+  <h2 class="section-title">Book Your Appointment 💗</h2>
+
+  <form onsubmit="sendBooking(event)">
+
+    <label>Your Name</label>
+
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <label>Phone Number</label>
+
+    <input id="phone" type="tel" placeholder="Enter your phone number" required>
+
+    <label>Choose Your Style</label>
+
+    <select id="style" required>
+
+      <option value="">Select a style</option>
+
+      <option>Small Knotless Braids - $80</option>
+
+      <option>Medium Knotless Braids - $90</option>
+
+      <option>Large Knotless Braids - $70</option>
+
+      <option>8 Feed In Braids - $50</option>
+
+      <option>6 Feed In Braids - $40</option>
+
+      <option>4 Feed In Braids - $30</option>
+
+      <option>Boho Tribal - $90</option>
+
+      <option>Tribal w/ Quick Weave - $80</option>
+
+      <option>Tribal No Curls - $60</option>
+
+    </select>
+
+    <label>Preferred Date</label>
+
+    <input id="date" type="date" required>
+
+    <label>Additional Details</label>
+
+    <textarea id="details"
+
+      placeholder="Length, color, add-ons, or anything else I should know..."></textarea>
+
+    <button class="button submit" type="submit">
+
+      REQUEST APPOINTMENT
+
+    </button>
+
+  </form>
+
+</section>
+
+<section id="contact">
+
+  <h2 class="section-title">Contact Braids by Niya</h2>
+
+  <div class="contact">
+
+    <p>📸 Instagram:
+
+      <a href="https://instagram.com/braidsbyniya_">
+
+        @braidsbyniya_
 
       </a>
 
     </p>
 
-    <p>Facebook: Monay Monay</p>
+    <p>📱 Phone:
 
-  </section>
+      <a href="tel:2162946065">
 
-  <footer>
-
-    © 2026 Braids by Niya
-
-  </footer>
-
-</body>
-
-</html>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Braids by Niya | Book Now</title>
-
-  <style>
-
-    body {
-
-      margin: 0;
-
-      font-family: Arial, sans-serif;
-
-      background: #fff;
-
-      color: #222;
-
-      text-align: center;
-
-    }
-
-    header {
-
-      padding: 35px 20px 20px;
-
-      background: #f8f8f8;
-
-    }
-
-    h1 {
-
-      font-size: 38px;
-
-      margin: 10px 0;
-
-    }
-
-    .subtitle {
-
-      font-size: 18px;
-
-      margin-bottom: 20px;
-
-    }
-
-    .notice {
-
-      margin: 20px auto;
-
-      padding: 18px;
-
-      max-width: 500px;
-
-      background: #f1f1f1;
-
-      border-radius: 15px;
-
-      font-weight: bold;
-
-      font-size: 18px;
-
-    }
-
-    .section {
-
-      padding: 25px 20px;
-
-      max-width: 600px;
-
-      margin: auto;
-
-    }
-
-    .style {
-
-      padding: 15px;
-
-      margin: 10px 0;
-
-      border: 1px solid #ddd;
-
-      border-radius: 12px;
-
-      background: #fafafa;
-
-    }
-
-    .book {
-
-      display: inline-block;
-
-      margin: 15px 5px;
-
-      padding: 16px 35px;
-
-      border-radius: 30px;
-
-      background: #58b957;
-
-      color: white;
-
-      text-decoration: none;
-
-      font-size: 20px;
-
-      font-weight: bold;
-
-    }
-
-    .book:hover {
-
-      opacity: .85;
-
-    }
-
-    .contact {
-
-      padding: 30px 20px;
-
-      background: #f8f8f8;
-
-    }
-
-    footer {
-
-      padding: 20px;
-
-      font-size: 14px;
-
-    }
-
-    a {
-
-      color: inherit;
-
-    }
-
-  </style>
-
-</head>
-
-<body>
-
-  <header>
-
-    <h1>Braids by Niya</h1>
-
-    <div class="subtitle">Beautiful Braids • Clean Parts • Quality Service</div>
-
-    <div class="notice">
-
-      💵 $25 DEPOSIT REQUIRED TO BOOK<br>
-
-      Please have your deposit ready before booking.
-
-    </div>
-
-    <a class="book" href="sms:2165696837?&body=Hi%20Niya%2C%20I%20would%20like%20to%20book%20an%20appointment.%20My%20name%20is%3A%20%5BNAME%5D.%20The%20style%20I%20want%20is%3A%20%5BSTYLE%5D.%20My%20preferred%20date%20is%3A%20%5BDATE%5D.%20Preferred%20time%3A%20%5BTIME%5D.">
-
-      BOOK NOW
-
-    </a>
-
-  </header>
-
-  <section class="section">
-
-    <h2>Booking Information</h2>
-
-    <div class="style">
-
-      <strong>$25 deposit required</strong><br>
-
-      Deposit is required to secure your appointment.
-
-    </div>
-
-    <div class="style">
-
-      Please include your name, desired hairstyle,
-
-      preferred date and preferred time when booking.
-
-    </div>
-
-    <a class="book" href="sms:2165696837?&body=Hi%20Niya%2C%20I%27m%20ready%20to%20book.%20My%20name%20is%3A%20">
-
-      TEXT TO BOOK
-
-    </a>
-
-  </section>
-
-  <section class="contact">
-
-    <h2>Contact</h2>
-
-    <p>📱 <a href="tel:2165696837">216-569-6837</a></p>
-
-    <p>
-
-      Instagram:
-
-      <a href="https://instagram.com/braids_by__niya">
-
-        @braids_by__niya
+        216-294-6065
 
       </a>
 
     </p>
 
-    <p>Facebook: Monay Monay</p>
+    <a class="button" href="tel:2162946065">
 
-  </section>
+      CALL TO BOOK
 
-  <footer>
+    </a>
 
-    © 2026 Braids by Niya
+  </div>
 
-  </footer>
+</section>
+
+<footer>
+
+  <p>💗 Braids by Niya 💗</p>
+
+  <p>Professional Braiding Services</p>
+
+  <p>Thank you for choosing me!</p>
+
+</footer>
+
+<script>
+
+function sendBooking(event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+
+  const phone = document.getElementById("phone").value;
+
+  const style = document.getElementById("style").value;
+
+  const date = document.getElementById("date").value;
+
+  const details = document.getElementById("details").value;
+
+  const message =
+
+    "Hi Braids by Niya! I would like to request an appointment.%0A%0A" +
+
+    "Name: " + encodeURIComponent(name) + "%0A" +
+
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+
+    "Style: " + encodeURIComponent(style) + "%0A" +
+
+    "Preferred Date: " + encodeURIComponent(date) + "%0A" +
+
+    "Details: " + encodeURIComponent(details);
+
+  window.location.href = "sms:2162946065?body=" + message;
+
+}
+
+</script>
 
 </body>
 
